@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      color: black;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .animation-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      font-size: 2em;
+    }
+
+    .animation-container span {
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 0.5;
+      }
+    }
+
+    .animation-container span:nth-child(1) { animation-delay: 0.1s; }
+    .animation-container span:nth-child(2) { animation-delay: 1.3s; }
+    .animation-container span:nth-child(3) { animation-delay: 1.9s; }
+    .animation-container span:nth-child(4) { animation-delay: 2.5s; }
+    /* Add more spans and adjust delay as needed for each letter */
+  </style>
+  <title>my page</title>
+</head>
+<body>
+  <div class="animation-container">
+    <span>V</span>
+    <span>i</span>
+    <span>j</span>
+    <span>a</span>
+    <span>y</span>
+    <!-- Add more spans for each letter in your name -->
+  </div>
+</body>
+</html>
